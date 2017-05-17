@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">FADEMAC</string>
+    <string name="empty"> </string>
+
+    <string name="ingresa_con">Login to your account</string>
+    <string name="nombre_usuario">Username</string>
+    <string name="error_credenciales">Incorrect user name or password. </string>
+    <string name="contrasenia">Password</string>
+    <string name="ingresar">Login</string>
+
+    <!--datos generales-->
+    <string name="datos_generales">GENERAL DATA</string>
+    <string name="equipo">Team</string>
+    <string name="categoria">Category</string>
+    <string name="edad">Age</string>
+    <string name="peso">Weight</string>
+    <string name="posicion">pos</string>
+    <string name="estatura">Height</string>
+    <string name="curp">CURP</string>
+    <string name="primer_nombre">First name</string>
+    <string name="segundo_nombre">Second name</string>
+    <string name="apellido_paterno">Last name</string>
+    <string name="apellido_materno">Apellido materno</string>
+    <string name="fecha_de_nacimiento">Birthdate</string>
+    <string name="genero">Gender</string>
+    <string name="entidad">Entity</string>
+    <string name="guardar_registro">Save</string>
+
+    <string name="title_activity_fullscreen">FullscreenActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <!--datos generales-->
+</resources>
