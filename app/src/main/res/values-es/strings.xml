@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">FADEMAC</string>
+    <string name="empty"> </string>
+
+    <!-- usar en caso de acento o ñ: -->
+    <!--Á	\u00C1	A con acento
+        á	\u00E1	a con acento
+        É	\u00C9	E con acento
+        é	\u00E9	e con acento
+        Í	\u00CD	I con acento
+        í	\u00ED	i con acento
+        Ó	\u00D3	O con acento
+        ó	\u00F3	o con acento
+        Ú	\u00DA	U con acento
+        ú	\u00FA	u con acento
+        Ü	\u00DC	U con dieress
+        ü	\u00FC	u con dieresis
+        ñ 	\u00F1	n con tilde
+        Ñ   \u00D1  N con tilde -->
+    <!-- usar en caso de acento o ñ: -->
+
+    <!--Login-->
+    <string name="ingresa_con">Ingresa a tu cuenta</string>
+    <string name="nombre_usuario">Nombre de usuario</string>
+    <string name="error_nombre_usuario">Usuario no encontrado!</string>
+    <string name="contrasenia">Contrase\u00F1a</string>
+    <string name="error_contrasenia">Error en Contrase\u00F1a!</string>
+    <string name="ingresar">Ingresar</string>
+    <!--Login-->
+
+    <!--datos generales-->
+    <string name="datos_generales">DATOS GENERALES</string>
+    <string name="equipo">Equipo</string>
+    <string name="categoria">Categor\u00EDa</string>
+    <string name="edad">Edad</string>
+    <string name="peso">Peso</string>
+    <string name="posicion">Pos</string>
+    <string name="estatura">Estatura</string>
+    <string name="curp">CURP</string>
+    <string name="primer_nombre">Primer nombre</string>
+    <string name="segundo_nombre">Segundo nombre</string>
+    <string name="apellido_paterno">Apellido paterno</string>
+    <string name="apellido_materno">Apellido materno</string>
+    <string name="fecha_de_nacimiento">Fecha de nacimiento</string>
+    <string name="genero">Genero</string>
+    <string name="entidad">Entidad</string>
+    <string name="guardar_registro">Guardar</string>
+    <string name="procedencia">Procedencia</string>
+    <string name="novato">Novato</string>
+    <string name="veterano">Veterano</string>
+
+    <string-array name="categorias_fademac">
+        <item>-Categor\u00EDa-</item>
+        <item>Ardillas</item>
+        <item>Castores</item>
+        <item>Zorros</item>
+        <item>Lobos</item>
+        <item>Rabbits</item>
+        <item>Hornets</item>
+        <item>Irons</item>
+        <item>Falcons</item>
+        <item>Tauros</item>
+        <item>Ponys</item>
+        <item>Juvenil A</item>
+        <item>Juvenil AA</item>
+        <item>Intermedia</item>
+        <item>Femenil</item>
+    </string-array>
+
+    <string-array name="genero">
+        <item>-Genero-</item>
+        <item>Hombre</item>
+        <item>Mujer</item>
+    </string-array>
+
+    <string-array name="entidad_federativa">
+        <item>-Entidad-</item>
+        <item>AGUASCALIENTES</item>
+        <item>BAJA CALIFORNIA</item>
+        <item>BAJA CALIFORNIA SUR</item>
+        <item>CAMPECHE</item>
+        <item>COAHUILA</item>
+        <item>COLIMA</item>
+        <item>CHIAPAS</item>
+        <item>CHIHUAHUA</item>
+        <item>CDMX</item>
+        <item>DURANGO</item>
+        <item>GUANAJUATO</item>
+        <item>GUERRERO</item>
+        <item>HIDALGO</item>
+        <item>JALISCO</item>
+        <item>M\u00C9XICO</item>
+        <item>MICHOAC\u00C1N</item>
+        <item>MORELOS</item>
+        <item>NAYARIT</item>
+        <item>NUEVO LE\u00D3N</item>
+        <item>OAXACA</item>
+        <item>PUEBLA</item>
+        <item>QUER\u00C9TARO</item>
+        <item>QUINTANA ROO</item>
+        <item>SAN LUIS POTOST</item>
+        <item>SINALOA</item>
+        <item>SONORA</item>
+        <item>TABASCO</item>
+        <item>TAMAULIPAS</item>
+        <item>TLAXCALA</item>
+        <item>VERACRUZ</item>
+        <item>YUCAT\u00C1N</item>
+        <item>ZACATECAS</item>
+    </string-array>
+    <!--datos generales-->
+</resources>

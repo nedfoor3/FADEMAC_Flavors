@@ -14,7 +14,7 @@
     <string name="categoria">Category</string>
     <string name="edad">Age</string>
     <string name="peso">Weight</string>
-    <string name="posicion">pos</string>
+    <string name="posicion">Pos</string>
     <string name="estatura">Height</string>
     <string name="curp">CURP</string>
     <string name="primer_nombre">First name</string>
@@ -25,9 +25,13 @@
     <string name="genero">Gender</string>
     <string name="entidad">Entity</string>
     <string name="guardar_registro">Save</string>
+    <string name="procedencia">Origin</string>
+    <string name="novato">Rookie</string>
+    <string name="veterano">Veteran</string>
+    <!--datos generales-->
 
     <string name="title_activity_fullscreen">FullscreenActivity</string>
     <string name="dummy_button">Dummy Button</string>
     <string name="dummy_content">DUMMY\nCONTENT</string>
-    <!--datos generales-->
+
 </resources>

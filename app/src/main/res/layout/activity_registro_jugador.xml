@@ -19,7 +19,8 @@
     <android.support.v4.widget.NestedScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@id/encabezado_registro">
+        android:layout_below="@id/encabezado_registro"
+        android:layout_margin="5dp">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -31,140 +32,151 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                android:layout_margin="5dp">
-
-                <FrameLayout
-                    android:layout_width="20mm"
-                    android:layout_height="30mm">
-
-                    <ImageView
-                        android:id="@+id/iv_foto_registro"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:background="@drawable/avatar"/>
-
-                    <ImageView
-                        android:id="@+id/iv_tomar_foto"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:src="@android:drawable/ic_menu_camera"/>
-                </FrameLayout>
-                <RelativeLayout
-                    android:layout_width="1dp"
-                    android:layout_height="match_parent"
-                    android:background="@color/colorPrimaryDark"/>
+                android:gravity="bottom">
+                    <FrameLayout
+                        android:layout_width="25mm"
+                        android:layout_height="30mm"
+                        android:background="@android:color/black"
+                        android:padding="1dp">
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@android:color/white"/>
+                        <ImageView
+                            android:id="@+id/avatar_jugador"
+                            android:layout_width="25mm"
+                            android:layout_height="30mm"
+                            android:background="@drawable/avatar"/>
+                        <ImageView
+                            android:id="@+id/iv_tomar_foto"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@android:drawable/ic_menu_camera"/>
+                    </FrameLayout>
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
-                    android:paddingLeft="4dp">
-                    <TextView
-                        android:text="@string/equipo"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:textColor="@android:color/black"/>
-                    <EditText
-                        android:id="@+id/et_equipo_jugador"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:textColor="@android:color/black"
-                        android:text="@string/empty"
-                        android:ems="10"
-                        android:background="@color/colorPrimaryLight"
-                        android:inputType="textCapCharacters"/>
-                    <TextView
-                        android:text="@string/categoria"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:textColor="@android:color/black"/>
-                    <EditText
-                        android:id="@+id/et_categoria_jugador"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:textColor="@android:color/black"
-                        android:text="@string/empty"
-                        android:ems="10"
-                        android:background="@color/colorPrimaryLight"
-                        android:inputType="textCapCharacters"/>
-                    <LinearLayout
-                        android:id="@+id/tv_edad_peso_pos"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="horizontal"
-                        android:gravity="center_horizontal">
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:textColor="@android:color/black"
-                            android:text="@string/edad"/>
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:textColor="@android:color/black"
-                            android:text="@string/peso"/>
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:textColor="@android:color/black"
-                            android:text="@string/estatura"/>
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:textColor="@android:color/black"
-                            android:text="@string/posicion"/>
-                    </LinearLayout>
+                    android:paddingLeft="5dp">
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:orientation="horizontal">
-                        <EditText
-                            android:id="@+id/et_edad_jugador"
+                        <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:textColor="@android:color/black"
-                            android:text="@string/empty"
-                            android:ems="10"
-                            android:background="@color/colorPrimaryLight"
-                            android:inputType="number"
-                            android:layout_marginRight="5dp"
-                            android:layout_weight="1"/>
-                        <EditText
-                            android:id="@+id/et_peso_jugador"
+                            android:layout_weight="5"
+                            android:orientation="vertical"
+                            android:layout_marginRight="5dp">
+                            <TextView
+                                android:text="#"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@android:color/black"/>
+                            <EditText
+                                android:id="@+id/et_jersey_jugador"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textColor="@android:color/black"
+                                android:text="@string/empty"
+                                android:background="@color/colorPrimaryLight"
+                                android:inputType="number"
+                                android:maxLength="2"/>
+                        </LinearLayout>
+                        <Spinner
+                            android:id="@+id/sp_categorias"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:textColor="@android:color/black"
-                            android:text="@string/empty"
-                            android:ems="10"
-                            android:background="@color/colorPrimaryLight"
-                            android:inputType="number"
-                            android:layout_marginRight="5dp"
-                            android:layout_weight="1"/>
-                        <EditText
-                            android:id="@+id/et_altura_jugador"
+                            android:layout_weight="1"
+                            android:layout_gravity="bottom"></Spinner>
+                        </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:textColor="@android:color/black"
-                            android:text="@string/empty"
-                            android:ems="10"
-                            android:background="@color/colorPrimaryLight"
-                            android:inputType="number"
-                            android:layout_marginRight="5dp"
-                            android:layout_weight="1"/>
-                        <EditText
-                            android:id="@+id/et_posicion_jugador"
+                            android:orientation="vertical"
+                            android:layout_weight="1">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:textColor="@android:color/black"
+                                android:text="@string/posicion"/>
+                            <EditText
+                                android:id="@+id/et_posicion_jugador"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textColor="@android:color/black"
+                                android:text="@string/empty"
+                                android:background="@color/colorPrimaryLight"
+                                android:inputType="textCapCharacters"
+                                android:maxLength="2"
+                                android:layout_marginRight="5dp"/>
+                        </LinearLayout>
+                        <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:textColor="@android:color/black"
-                            android:text="@string/empty"
-                            android:ems="10"
-                            android:background="@color/colorPrimaryLight"
-                            android:inputType="textCapSentences"
-                            android:layout_marginRight="5dp"
-                            android:layout_weight="1"/>
+                            android:orientation="vertical"
+                            android:layout_weight="1">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textColor="@android:color/black"
+                                android:text="@string/edad"/>
+                            <EditText
+                                android:id="@+id/et_edad_jugador"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textColor="@android:color/black"
+                                android:text="@string/empty"
+                                android:background="@color/colorPrimaryLight"
+                                android:inputType="number"
+                                android:layout_marginRight="5dp"/>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_weight="1">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textColor="@android:color/black"
+                                android:text="@string/peso"/>
+                            <EditText
+                                android:id="@+id/et_peso_jugador"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textColor="@android:color/black"
+                                android:text="@string/empty"
+                                android:background="@color/colorPrimaryLight"
+                                android:inputType="numberDecimal"
+                                android:layout_marginRight="5dp"/>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_weight="1">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:textColor="@android:color/black"
+                                android:text="@string/estatura"/>
+                            <EditText
+                                android:id="@+id/et_altura_jugador"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textColor="@android:color/black"
+                                android:text="@string/empty"
+                                android:background="@color/colorPrimaryLight"
+                                android:inputType="numberDecimal"
+                                android:layout_marginRight="5dp"/>
+                        </LinearLayout>
                     </LinearLayout>
                     <TextView
                         android:text="@string/curp"
@@ -172,7 +184,7 @@
                         android:layout_height="wrap_content"
                         android:textColor="@android:color/black"/>
                     <LinearLayout
-                        android:layout_width="wrap_content"
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:orientation="horizontal"
                         android:gravity="center_vertical">
@@ -181,9 +193,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:textColor="@android:color/black"
-                            android:text="@string/empty"
                             android:hint="XXXX000000XXXXXX"
-                            android:ems="10"
                             android:background="@color/colorPrimaryLight"
                             android:inputType="textCapCharacters"/>
                         <TextView
@@ -198,10 +208,75 @@
                             android:textColor="@android:color/black"
                             android:text="@string/empty"
                             android:hint="00"
-                            android:ems="10"
                             android:background="@color/colorPrimaryLight"
                             android:inputType="textCapCharacters" />
                     </LinearLayout>
+                    <RadioGroup
+                        android:id="@+id/rg_experiencia"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <RadioButton
+                            android:id="@+id/rb_experiencia_veterano"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:text="@string/veterano"/>
+                        <RadioButton
+                            android:id="@+id/rb_experiencia_novato"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:text="@string/novato"/>
+                    </RadioGroup>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/contenedor_equipo_y_procedencia"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp">
+                <LinearLayout
+                    android:layout_width="25mm"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:text="@string/equipo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@android:color/black"/>
+                    <EditText
+                        android:id="@+id/et_equipo_jugador"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@android:color/black"
+                        android:text="@string/empty"
+                        android:ems="10"
+                        android:background="@color/colorPrimaryLight"
+                        android:inputType="textCapCharacters"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/contenedor_procedencia"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="5dp"
+                    android:visibility="invisible">
+                    <TextView
+                        android:text="@string/procedencia"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@android:color/black"/>
+                    <EditText
+                        android:id="@+id/et_equipo_procedencia"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@android:color/black"
+                        android:text="@string/novato"
+                        android:ems="10"
+                        android:background="@color/colorPrimaryLight"
+                        android:inputType="textCapCharacters"/>
                 </LinearLayout>
             </LinearLayout>
             <LinearLayout
@@ -279,6 +354,21 @@
                         android:inputType="textCapSentences"
                         android:textColor="@android:color/black"/>
                 </android.support.design.widget.TextInputLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <Spinner
+                        android:id="@+id/sp_entidades"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"></Spinner>
+                    <Spinner
+                        android:id="@+id/sp_genero"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"></Spinner>
+                </LinearLayout>
             </LinearLayout>
             <Button
                 android:id="@+id/btn_guardar_registro"
