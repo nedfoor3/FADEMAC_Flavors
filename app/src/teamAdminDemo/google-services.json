@@ -1,0 +1,99 @@
+{
+  "project_info": {
+    "project_number": "921574667246",
+    "firebase_url": "https://football-mexico.firebaseio.com",
+    "project_id": "football-mexico",
+    "storage_bucket": "football-mexico.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:921574667246:android:6443378bcda96ffd",
+        "android_client_info": {
+          "package_name": "com.rawrstudio.fademac"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "921574667246-c8m98tl874i8poolt98tfn08oslg6a1c.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.rawrstudio.fademac",
+            "certificate_hash": "0c742e8fc2f34a2b60d49f466cde944419cf42f3"
+          }
+        },
+        {
+          "client_id": "921574667246-ida407rqe1eqo77u0v3s1q6rgs784q9t.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDpuM3EmgOTFurSMib3P_MT9RNJ1FMtn1k"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "921574667246-ida407rqe1eqo77u0v3s1q6rgs784q9t.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:921574667246:android:86f37f84574b6389",
+        "android_client_info": {
+          "package_name": "com.rawrstudio.fademac.team.admin.demo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "921574667246-etp7sl66f6v0e9sj8k2t3h2ihpk77q81.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.rawrstudio.fademac.team.admin.demo",
+            "certificate_hash": "0c742e8fc2f34a2b60d49f466cde944419cf42f3"
+          }
+        },
+        {
+          "client_id": "921574667246-ida407rqe1eqo77u0v3s1q6rgs784q9t.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDpuM3EmgOTFurSMib3P_MT9RNJ1FMtn1k"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "921574667246-ida407rqe1eqo77u0v3s1q6rgs784q9t.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
