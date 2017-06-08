@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<paths>
+    <external-path path="." name="registrosFademac"/>
+    <!--<external-path path="Android/data/com.rawrstudio.fademac" name="files_root" />
+    <external-path path="fademac/registros/" name="external_storage_root" />-->
+</paths>
